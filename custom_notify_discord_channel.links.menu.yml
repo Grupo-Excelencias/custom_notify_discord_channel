@@ -1,0 +1,6 @@
+custom_notify_discord_channel.admin_settings_form:
+  title: 'Form Settings Notify for a Discord channel'
+  route_name: custom_notify_discord_channel.admin_settings_form
+  description: 'Notify for a Discord channel configurations'
+  parent: system.admin_config_services
+  weight: 99

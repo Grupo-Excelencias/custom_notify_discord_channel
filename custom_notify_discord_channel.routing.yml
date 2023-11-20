@@ -1,0 +1,9 @@
+custom_notify_discord_channel.admin_settings_form:
+  path: '/admin/config/custom_notify_discord_channel/adminsettings'
+  defaults:
+    _form: '\Drupal\custom_notify_discord_channel\Form\SettingsNotifyForDiscordChannelForm'
+    _title: 'Form Settings Notify for a Discord channel '
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
