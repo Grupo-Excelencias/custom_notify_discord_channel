@@ -1,10 +1,10 @@
 name: Notify for a Discord channel
 type: module
 description: This module allows you to send notifications, when an event with a type of content occurs, to a channel on the Discord platform.
-#core: 8.x
-core_version_requirement: ^8 || ^9 || ^10
+core: 8.x
+core_version_requirement: ^8 || ^9
 package: Custom
 configure: custom_notify_discord_channel.admin_settings_form
 
-version: '1.0.0-dev'
+version: '1.0.0'
 project: 'notify_for_a _discord_channel'
