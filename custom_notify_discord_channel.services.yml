@@ -1,0 +1,5 @@
+services:
+  event_subscriber_notify_discord_channel.node.insert:
+    class: Drupal\custom_notify_discord_channel\EventSubscriber\NodeInsertNotifyDiscordChannelSubscriber
+    tags:
+      - { name: event_subscriber }
