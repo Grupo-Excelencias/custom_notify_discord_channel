@@ -5,5 +5,5 @@ core_version_requirement: ^9 || ^10
 package: Custom
 configure: custom_notify_discord_channel.admin_settings_form
 
-version: '1.0.0'
+version: '2.0.0'
 project: 'notify_for_a _discord_channel'
