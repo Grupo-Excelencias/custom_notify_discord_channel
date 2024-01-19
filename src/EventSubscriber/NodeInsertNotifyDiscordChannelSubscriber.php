@@ -104,11 +104,7 @@ class NodeInsertNotifyDiscordChannelSubscriber implements EventSubscriberInterfa
 
                 $image_uri = $entity->get($config->get('custom_notify_discord_channel_' . $entity->bundle() . '_image_name_field'))->entity->getFileUri();
 
-                if (floatval(\Drupal::VERSION) >= 8 && floatval(\Drupal::VERSION) < 9) {
-                  $image_url = file_create_url($image_uri);
-                } else {
-                  $image_url = \Drupal::service('file_url_generator')->generateAbsoluteString($image_uri);
-                }
+                $image_url = \Drupal::service('file_url_generator')->generateAbsoluteString($image_uri);                
 
               }
 
@@ -121,11 +117,7 @@ class NodeInsertNotifyDiscordChannelSubscriber implements EventSubscriberInterfa
 
                 $image_uri = $entity->get($config->get('custom_notify_discord_channel_' . $entity->bundle() . '_image_name_field'))->entity->field_media_image->entity->getFileUri();
 
-                if (floatval(\Drupal::VERSION) >= 8 && floatval(\Drupal::VERSION) < 9) {
-                  $image_url = file_create_url($image_uri);
-                } else {
-                  $image_url = \Drupal::service('file_url_generator')->generateAbsoluteString($image_uri);
-                }
+                $image_url = \Drupal::service('file_url_generator')->generateAbsoluteString($image_uri);
 
               }
 
@@ -243,11 +235,7 @@ class NodeInsertNotifyDiscordChannelSubscriber implements EventSubscriberInterfa
 
                 $image_uri = $user_login->get($config->get('custom_notify_discord_channel_user_footer_image_name_field'))->entity->getFileUri();
 
-                if (floatval(\Drupal::VERSION) >= 8 && floatval(\Drupal::VERSION) < 9) {
-                  $image_user_url = file_create_url($image_uri);
-                } else {
-                  $image_user_url = \Drupal::service('file_url_generator')->generateAbsoluteString($image_uri);
-                }
+                $image_user_url = \Drupal::service('file_url_generator')->generateAbsoluteString($image_uri);                
 
               }
 
@@ -260,11 +248,7 @@ class NodeInsertNotifyDiscordChannelSubscriber implements EventSubscriberInterfa
 
                 $image_uri = $user_login->get($config->get('custom_notify_discord_channel_user_footer_image_name_field'))->entity->field_media_image->entity->getFileUri();
 
-                if (floatval(\Drupal::VERSION) >= 8 && floatval(\Drupal::VERSION) < 9) {
-                  $image_user_url = file_create_url($image_uri);
-                } else {
-                  $image_user_url = \Drupal::service('file_url_generator')->generateAbsoluteString($image_uri);
-                }
+                $image_user_url = \Drupal::service('file_url_generator')->generateAbsoluteString($image_uri);
 
               }
 

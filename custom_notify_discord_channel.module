@@ -69,7 +69,7 @@ function custom_notify_discord_channel_entity_insert(Drupal\Core\Entity\EntityIn
         }
 
         // Dispatch the node insert demo event so that subscribers can act accordingly.
-        \Drupal::service('event_dispatcher')->dispatch(NodeInsertNotifyDiscordChannelEvent::NOTIFY_DISCORD_CHANNEL_NODE_INSERT, new NodeInsertNotifyDiscordChannelEvent($entity));
+        \Drupal::service('event_dispatcher')->dispatch(new NodeInsertNotifyDiscordChannelEvent($entity), NodeInsertNotifyDiscordChannelEvent::NOTIFY_DISCORD_CHANNEL_NODE_INSERT);
 
       }
 
