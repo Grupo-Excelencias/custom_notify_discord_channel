@@ -2,9 +2,7 @@
 
 namespace Drupal\custom_notify_discord_channel\Event;
 
-//use Symfony\Component\EventDispatcher\Event;
-use Symfony\Contracts\EventDispatcher\Event;
-//use Drupal\Component\EventDispatcher\Event;
+use Drupal\Component\EventDispatcher\Event;
 use Drupal\Core\Entity\EntityInterface;
 
 /**
